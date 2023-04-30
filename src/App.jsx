@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div>
-      <h1>{data.activity}</h1>
+      <h1>{data.displayName}</h1>
     </div>
   );
 }
