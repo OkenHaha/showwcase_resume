@@ -5,7 +5,7 @@ function App() {
   const [data, setData] = useState([]);
   const API_KEY = '0ace4b6e5466b6cfd5a0e089543a37f13d5e0ca5b4c6aa49e2'
   useEffect(() => {
-    axios.get('https://cache.showwcase.com/user/okenk', {
+    axios.get('https://cache.showwcase.com/user/tianrongliew', {
       headers: {
         'x-api-key': API_KEY,
         'Content-Type': 'application/json'
@@ -20,16 +20,13 @@ function App() {
   }, []);
 
   return (
-    // <div>
-    //   {data.map(item => (
-    //     <div key={item.id}>
-    //       <h2>{item.title}</h2>
-    //       <p>{item.body}</p>
-    //     </div>
-    //   ))}
-    // </div>
-    <>
-    </>
+    <div>
+      {data.map(item => (
+        <div key={item.id}>
+          <h2>{item.displayName}</h2>
+        </div>
+      ))}
+    </div>
   );
 }
 
